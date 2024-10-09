@@ -42,15 +42,14 @@ while True:
             display.show(scissor)
             sleep(3000)  
             display.show(Image.HAPPY)
-
-    
+            
     # if button a is pressed
     if button_a.is_pressed():
         score += 1
         display.show(Image.YES)
         sleep(1000)  
         display.show(Image.HAPPY)
-
+        
     # if button b is pressed
     if button_b.is_pressed():
         display.scroll("Score: " + str(score)) 
